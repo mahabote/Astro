@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="transparent z-depth-0">
+
+    <div class="nav-wrapper container">
+
+        <a href="#" class="brand-logo">
+            🔮 Mystic Fortune
+        </a>
+
+        <ul class="right">
+
+            <li>
+
+                <a href="#" id="logoutBtn">
+
+                    <i class="material-icons left">
+                        logout
+                    </i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+    <!-- WELCOME CARD -->
+
+    <div class="glass-card welcome-card center-align">
+
+        <h4>
+
+            Welcome Back,
+
+            <span id="welcomeName">
+
+                Loading...
+
+            </span>
+
+            ✨
+
+        </h4>
+
+        <p id="fortuneMessage">
+
+            Loading your fortune...
+
+        </p>
+
+    </div>
+
+    <!-- STAT CARDS -->
+
+    <div class="row">
+
+        <div class="col s12 m6">
+
+            <div class="glass-card stat-card center-align">
+
+                <i class="material-icons medium amber-text">
+
+                    auto_awesome
+
+                </i>
+
+                <h4 id="memberSince">
+
+                    --
+
+                </h4>
+
+                <p>
+
+                    Member Since
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="col s12 m6">
+
+            <div class="glass-card stat-card center-align">
+
+                <i class="material-icons medium green-text">
+
+                    verified_user
+
+                </i>
+
+                <h4>
+
+                    Active
+
+                </h4>
+
+                <p>
+
+                    Account Status
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PROFILE CARD -->
+
+    <div class="glass-card profile-card">
+
+        <div class="center-align">
+
+            <i class="material-icons profile-icon">
+
+                account_circle
+
+            </i>
+
+            <h5 id="name">
+
+                Loading...
+
+            </h5>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="info-row">
+
+            <i class="material-icons">
+
+                account_circle
+
+            </i>
+
+            <span id="username">
+
+                Loading...
+
+            </span>
+
+        </div>
+
+        <div class="info-row">
+
+            <i class="material-icons">
+
+                email
+
+            </i>
+
+            <span id="email">
+
+                Loading...
+
+            </span>
+
+        </div>
+
+        <div class="info-row">
+
+            <i class="material-icons">
+
+                phone
+
+            </i>
+
+            <span id="phone">
+
+                Loading...
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- QUICK ACTIONS -->
+
+    <div class="row">
+
+        <div class="col s12 m4">
+
+            <a href="#"
+               class="btn-large deep-purple action-btn waves-effect">
+
+                🔮 New Reading
+
+            </a>
+
+        </div>
+
+        <div class="col s12 m4">
+
+            <a href="#"
+               class="btn-large amber black-text action-btn waves-effect">
+
+                📜 History
+
+            </a>
+
+        </div>
+
+        <div class="col s12 m4">
+
+            <a href="#changePasswordModal"
+               class="btn-large red action-btn modal-trigger waves-effect">
+
+                🔒 Change Password
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CHANGE PASSWORD MODAL -->
+
+<div id="changePasswordModal" class="modal">
+
+    <div class="modal-content">
+
+        <h4>
+
+            Change Password
+
+        </h4>
+
+        <form id="changePasswordForm">
+
+            <div class="input-field">
+
+                <input
+                    id="currentPassword"
+                    type="password"
+                    required>
+
+                <label for="currentPassword">
+
+                    Current Password
+
+                </label>
+
+            </div>
+
+            <div class="input-field">
+
+                <input
+                    id="newPassword"
+                    type="password"
+                    required>
+
+                <label for="newPassword">
+
+                    New Password
+
+                </label>
+
+            </div>
+
+            <div class="input-field">
+
+                <input
+                    id="confirmPassword"
+                    type="password"
+                    required>
+
+                <label for="confirmPassword">
+
+                    Confirm Password
+
+                </label>
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn deep-purple waves-effect">
+
+                Update Password
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="page-footer transparent">
+
+    <div class="footer-copyright">
+
+        <div class="container center">
+
+            ✨ Mystic Fortune Dashboard
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- LOADING OVERLAY -->
+
+<div id="loadingOverlay" class="loading-overlay">
+
+    <div class="loading-content">
+
+        <div class="preloader-wrapper big active">
+
+            <div class="spinner-layer spinner-white-only">
+
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h5>Updating Password...</h5>
+
+        <p>Please wait</p>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

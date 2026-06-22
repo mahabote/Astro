@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mystic Fortune</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        body {
+            background: #fafafa;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, .6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .parallax-container {
+            height: 100vh;
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+
+    <nav class="deep-purple darken-4">
+        <div class="container">
+
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    Mystic Fortune
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li>
+                        <a href="register.html" class="btn amber darken-2">
+                            Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <div class="parallax-container">
+
+        <div class="hero">
+
+            <div class="hero-content">
+
+                <h1>Discover Your Future</h1>
+
+                <h5>
+                    Tarot • Astrology • Numerology
+                </h5>
+
+                <br>
+
+                <a href="register.html" class="btn-large amber darken-2">
+                    Get Started
+                </a>
+
+                <a href="login.html" class="btn-large white black-text">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="parallax">
+            <img src="https://images.unsplash.com/photo-1518562180175-34a163b1a9a6">
+        </div>
+
+    </div>
+
+    <!-- SERVICES -->
+
+    <div class="container section" id="services">
+
+        <h3 class="center section-title">
+            Our Services
+        </h3>
+
+        <div class="row">
+
+            <div class="col s12 m4">
+
+                <div class="card">
+
+                    <div class="card-content center">
+
+                        <i class="large material-icons amber-text">
+                            stars
+                        </i>
+
+                        <span class="card-title">
+                            Tarot Reading
+                        </span>
+
+                        <p>
+                            Receive spiritual guidance through tarot cards.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col s12 m4">
+
+                <div class="card">
+
+                    <div class="card-content center">
+
+                        <i class="large material-icons deep-purple-text">
+                            brightness_3
+                        </i>
+
+                        <span class="card-title">
+                            Astrology
+                        </span>
+
+                        <p>
+                            Explore your zodiac destiny and life path.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col s12 m4">
+
+                <div class="card">
+
+                    <div class="card-content center">
+
+                        <i class="large material-icons green-text">
+                            auto_awesome
+                        </i>
+
+                        <span class="card-title">
+                            Numerology
+                        </span>
+
+                        <p>
+                            Unlock the meaning of numbers in your life.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PRICING -->
+
+    <div class="deep-purple lighten-5 section" id="pricing">
+
+        <div class="container">
+
+            <h3 class="center section-title">
+                Reading Packages
+            </h3>
+
+            <div class="row">
+
+                <div class="col s12 m4">
+
+                    <div class="card">
+
+                        <div class="card-content center">
+
+                            <span class="card-title">
+                                Basic
+                            </span>
+
+                            <div class="price">
+                                $10
+                            </div>
+
+                            <p>1 Question</p>
+                            <p>Email Report</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col s12 m4">
+
+                    <div class="card amber lighten-4">
+
+                        <div class="card-content center">
+
+                            <span class="card-title">
+                                Premium
+                            </span>
+
+                            <div class="price">
+                                $25
+                            </div>
+
+                            <p>5 Questions</p>
+                            <p>Detailed Reading</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col s12 m4">
+
+                    <div class="card">
+
+                        <div class="card-content center">
+
+                            <span class="card-title">
+                                VIP
+                            </span>
+
+                            <div class="price">
+                                $50
+                            </div>
+
+                            <p>Unlimited Questions</p>
+                            <p>Priority Support</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CTA -->
+
+    <div class="container section center">
+
+        <h3>Start Your Journey Today</h3>
+
+        <a href="register.html" class="btn-large deep-purple">
+            Create Account
+        </a>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer deep-purple darken-4">
+
+        <div class="container center">
+
+            © 2026 Mystic Fortune
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.Parallax.init(
+                document.querySelectorAll('.parallax')
+            );
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Login</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container register-wrapper">
+
+    <div class="row">
+
+        <div class="col s12 m8 l5 offset-m2 offset-l3">
+
+            <div class="card register-card z-depth-3">
+
+                <div class="center">
+
+                    <i class="material-icons large amber-text">
+                        lock_open
+                    </i>
+
+                    <h4 class="deep-purple-text">
+                        Login
+                    </h4>
+
+                    <p class="grey-text">
+                        Welcome back
+                    </p>
+
+                </div>
+
+                <form id="loginForm">
+
+                    <div class="input-field">
+
+                        <i class="material-icons prefix">
+                            account_circle
+                        </i>
+
+                        <input
+                            id="username"
+                            type="text"
+                            required>
+
+                        <label for="username">
+                            Username
+                        </label>
+
+                    </div>
+
+                    <div class="input-field">
+
+                        <i class="material-icons prefix">
+                            lock
+                        </i>
+
+                        <input
+                            id="password"
+                            type="password"
+                            required>
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                    </div>
+
+                    <br>
+
+                    <button
+                        id="loginBtn"
+                        type="submit"
+                        class="btn-large deep-purple submit-btn">
+
+                        LOGIN
+
+                    </button>
+
+                </form>
+
+                <br>
+
+                <div class="center">
+
+                    Don't have an account?
+
+                    <a href="register.html">
+                        Register
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Loading Overlay -->
+
+<div
+id="loadingOverlay"
+class="loading-overlay">
+
+    <div class="loading-content">
+
+        <div class="preloader-wrapper big active">
+
+            <div class="spinner-layer spinner-white-only">
+
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h5>Logging In...</h5>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
